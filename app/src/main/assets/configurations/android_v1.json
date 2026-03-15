@@ -1,0 +1,8 @@
+{
+  "patterns": [".*"],
+  "properties": {
+    "context": "default",
+    "uri": "hotwire://fragment/web/custom",
+    "pull_to_refresh_enabled": true
+  }
+}
