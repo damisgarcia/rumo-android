@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#e57b60</color>
+    <color name="orange">#E55A37</color> <!-- Cor da logo fornecida -->
     <color name="white_40">#66FFFFFF</color>
+    <color name="dark_grey">#111111</color> <!-- Fundo do ícone solicitado -->
 </resources>
