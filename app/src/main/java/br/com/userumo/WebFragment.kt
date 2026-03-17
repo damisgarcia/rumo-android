@@ -3,6 +3,9 @@ package br.com.userumo
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.navigation.NavOptions
 import dev.hotwire.core.turbo.config.PathConfigurationProperties
 import dev.hotwire.core.turbo.visit.VisitAction
@@ -14,6 +17,15 @@ class WebFragment : HotwireWebFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         toolbarForNavigation()?.visibility = View.GONE
+
+        // Aplica o padding para respeitar a barra de navegação (botões ou gestos)
+        ViewCompat.setOnApplyWindowInsetsListener(view) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.updatePadding(
+                bottom = systemBars.bottom
+            )
+            insets
+        }
     }
 
     @SuppressLint("InflateParams")
