@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -10,8 +12,8 @@ android {
         applicationId = "br.com.userumo"
         minSdk = 28
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,4 +45,9 @@ dependencies {
 
     implementation("dev.hotwire:core:1.2.6")
     implementation("dev.hotwire:navigation-fragments:1.2.6")
+    implementation(libs.kotlinx.serialization.json)
+
+    // Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.messaging.ktx)
 }
