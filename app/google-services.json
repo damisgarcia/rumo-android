@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218682931781",
+    "project_id": "rumoapp-a5b2f",
+    "storage_bucket": "rumoapp-a5b2f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218682931781:android:3af32a868b4e336572012c",
+        "android_client_info": {
+          "package_name": "br.com.userumo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUOx2mxOkpex5OdEyoIuV3nsS4iZA95SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
