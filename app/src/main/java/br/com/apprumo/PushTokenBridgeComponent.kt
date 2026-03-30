@@ -1,4 +1,4 @@
-package br.com.userumo
+package br.com.apprumo
 
 import android.os.Build
 import android.util.Log

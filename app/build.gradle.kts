@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace = "br.com.userumo"
+    namespace = "br.com.apprumo"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "br.com.userumo"
+        applicationId = "br.com.apprumo"
         minSdk = 28
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

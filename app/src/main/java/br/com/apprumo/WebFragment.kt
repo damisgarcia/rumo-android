@@ -1,4 +1,4 @@
-package br.com.userumo
+package br.com.apprumo
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import androidx.navigation.NavOptions
+import br.com.apprumo.R
 import dev.hotwire.core.turbo.config.PathConfigurationProperties
 import dev.hotwire.core.turbo.visit.VisitAction
 import dev.hotwire.navigation.destinations.HotwireDestinationDeepLink

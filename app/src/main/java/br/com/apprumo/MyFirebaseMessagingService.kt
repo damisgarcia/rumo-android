@@ -1,4 +1,4 @@
-package br.com.userumo
+package br.com.apprumo
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
