@@ -38,9 +38,10 @@ class HotwireApplication : Application() {
             HotwireWebFragment::class
         )
 
-        // Registra o componente de bridge para o token de push
+        // Registra os componentes de bridge
         Hotwire.registerBridgeComponents(
-            BridgeComponentFactory("push-token", ::PushTokenBridgeComponent)
+            BridgeComponentFactory("push-token", ::PushTokenBridgeComponent),
+            BridgeComponentFactory("clear-notification", ::ClearNotificationBridgeComponent)
         )
     }
 }

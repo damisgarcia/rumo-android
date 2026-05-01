@@ -44,12 +44,6 @@ class MainActivity : HotwireActivity() {
         }
 
         navHost.applyDefaultImeWindowInsets()
-
-        // Handle notification click
-        intent.getStringExtra("url")?.let {
-            delegate.currentNavigator?.route(it)
-        }
-
         askNotificationPermission()
     }
 
@@ -73,8 +67,8 @@ class MainActivity : HotwireActivity() {
     override fun navigatorConfigurations() = listOf(
         NavigatorConfiguration(
             name = "main",
-            startLocation = "https://app.userumo.com.br",
-            //            startLocation = "http://10.0.2.2:3000", DEV
+//            startLocation = "https://app.userumo.com.br",
+            startLocation = intent.getStringExtra("url") ?: "https://app.userumo.com.br",
             navigatorHostId = R.id.main_nav_host
         )
     )
